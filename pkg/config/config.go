@@ -36,7 +36,7 @@ func New() (*Config, error) {
 	var cfg Config
 
 	// Load environment variables from .env file
-	err := LoadEnvVars(".env")
+	err := LoadEnvVars("../../.env")
 	if err != nil {
 		return nil, fmt.Errorf("cannot read env: %w", err)
 	}

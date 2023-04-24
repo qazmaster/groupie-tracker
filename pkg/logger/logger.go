@@ -2,7 +2,7 @@ package logger
 
 import (
 	"fmt"
-	"github.com/qazmaster/groupie-tracker/internal/config"
+	"github.com/qazmaster/groupie-tracker/pkg/config"
 	"log"
 	"os"
 )

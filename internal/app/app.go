@@ -2,8 +2,8 @@ package app
 
 import (
 	"fmt"
-	"github.com/qazmaster/groupie-tracker/internal/config"
-	"github.com/qazmaster/groupie-tracker/internal/logger"
+	"github.com/qazmaster/groupie-tracker/pkg/config"
+	"github.com/qazmaster/groupie-tracker/pkg/logger"
 	"log"
 )
 
@@ -21,8 +21,12 @@ func Run() error {
 	defer func() {
 		err = log.Output(2, "")
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
+
 		}
 	}()
+	l = l
+	// TODO: continue here
+
 	return nil
 }
